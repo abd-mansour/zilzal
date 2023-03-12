@@ -21,16 +21,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <section class="py-5 text-center container">
-          <div class="row py-lg-5">
-            <div class="col-lg-6 col-md-8 mx-auto">
-              <h3 class="fw-light">الهزات الأرضية الحالية حول العالم</h3>
-              <p class="lead text-muted">وصف قصير حول الألبوم أدناه اجعله قصير
-                </p>
-              <p>
-                <a href="#" class="btn btn-primary my-2">الدعوة الرئيسية </a>
-                <a href="#" class="btn btn-secondary my-2">عمل ثانوي</a>
+        <section className="py-5 text-center container">
+          <div className="row py-lg-5">
+            <div className="col-lg-6 col-md-8 mx-auto">
+              <h3 className="fw-light">الهزات الأرضية الحالية حول العالم</h3>
+              <p className="lead text-muted">
+                تطوير عبدالواحد منصور              
               </p>
+
             </div>
           </div>
         </section>
