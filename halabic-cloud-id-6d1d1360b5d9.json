@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "halabic-cloud-id",
+  "private_key_id": "6d1d1360b5d9ac1a7eeb2b018b110e93e5d67cb4",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCynzC58kRvW2hL\ngxVTnWfZoaDINqCdurxjE0D3ILJjxYShZt2T/jPcRh5C9eBjMLi0Z8bTOf1sh/b1\n1dwOsgkt6DY/ycDuwBNZ196AHQHwdaXgDZ9EZ2gBF5cb0PuNVOCXMLklJxgG6lcZ\nvKYebaKkm6QfxCgOKyRxg+QhjxcZHZnfjL4LfhOzVvfRwq91wF2nW9dZa8oKIj/p\nHJ37lih8TEY3ulZkW5Y/fz37QE9BCtCihQD4CVuZxMspIp3hWmveqn55Nlf51gTM\n1693mcy+jQFv7arKS0Dd05O3b5U7AgUUIfdSQD0lE0nha7c5r06g6BQbmUMlm9Ej\nfAEThhTjAgMBAAECggEAD/F+Q5VTScPqlZWNXsRAU8BF005vnFnhnM+dedwfmsuI\n4MXcu0FHrGlPJCzsKrkGPjFmds4d8lpZzxbtUxvNuUeZKAJrHSRkgHLF4muJvnEn\nLXjUdszqufDlb6SB/4XMR30gLtJu0OyJJRFIm+ivSWq3BeWCqcPCDKZ4GLgRQ2V8\nXcH6+E30urgGjHps2Xv9oGo+ANcHuAXdEbyxYbtaFK+UgXMpvGMVvKlH08RdG5dj\nKVSbudbAX4JTi9X3fJADHxatIp590Vo1alugVuubzW8+tAWkxfoo0fPPACg/ioWH\nuZcbBx3saCo7V3iEWJDFKxAxbknTiXQShNruXvWngQKBgQDnomRVcDhgrnZsxiWO\nHSFqCoO4LtaWZp4raT6rfHIk/YlH5e/voss8vi3Njm6a6pGHvOaiaHlOPNSTumAs\nvsZufCy+rh/cCLdRUhp9oG7bNdYusw7CIrqbDoWVrmzEuiC/x7EIvGT5q4xrGydB\n+/Ent3V+4k0pFMI843919eT0QQKBgQDFaT3Ko18nRK4SjtEiwCR0IJs22mv7RPoA\n0tK9GgBEcCUhmxvDexV1CxV2VL21zGxMQ7R3odH6vNno068kkfK4wnkDUlFbDaq9\nJBJQDpL+ytpS3VtlE0TnCowM8gKFdaxomHrTF6VH2N+ZiiDfN6eU9FQs0B+DyRD0\nj7BQCkywIwKBgGt+021LDP7hOBg2xIr1PeKGSqaZJgDaUqD20JyovhgoiSMStIzT\nUdo4r+zrIq1GGo+RvL62GUWTuVttbOCXEGOJwQIksKheaySUI7MVVxzoGSPG+Rxj\nHZKD5L6YGeYaMsSNmbziIUI0uI+kJE3c7AdwfliKESD1f0belPJbUQuBAoGAcUDF\nQGGlj0Opkd/5PzR4NV8XbMq2NDsIKjzIxdAK4zhrNPJlZSpRzwoC0BYhmBCk+MPG\n3vMpIe4CHb6Dtjk8xJ5dCnjJT7FxiH0PPHp//kimI+/2JPB/EQVN/4c/xw0RUhhY\nLo5cNfHHpbBG14h4Tc42FFd6HQLXBVcB0Yl3IX0CgYAKd02QWaZtIELRnhN/7zMp\nDLrFSesGKvob7a6XierdcBtUT0m54LUHoO/e5+c/YhAkEKCjsn6A8Zfr3lZJ1VWj\nwOgVXEp8B46SiUgl0EpoGBNhlvfk4ZV2R+P8Y3o+bHueNVQDHiw8AoqSCNsrZBhW\namViRp+KX04NzqNWsJIEOA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "earthquake@halabic-cloud-id.iam.gserviceaccount.com",
+  "client_id": "113379649509949732092",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/earthquake%40halabic-cloud-id.iam.gserviceaccount.com"
+}
