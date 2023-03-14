@@ -8,7 +8,7 @@ const EarthquakeDetails = () => {
     const [earthquakes, setEarthquakes] = useState([]);
 
     useEffect(() => {
-        fetch('https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2023-03-11&endtime=2023-03-14')
+        fetch('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?latitude=32.2610059&longitude=37.2179931&maxradiuskm=1500')
             .then(res => res.json())
             .then(data => setEarthquakes(data.features))
             .catch(error => console.log(error))
@@ -33,7 +33,7 @@ const EarthquakeDetails = () => {
                         <div className="col" key={index}>
                             <div className="card shadow-sm h-100">
                                 <div className="card-body">
-                                    <p className="card-text">{earthquake.properties.place}</p>
+                                    <p className="card-text">{earthquake.properties.place.replace(/^[^,]*,\s*/, '')}</p>
                                     <div className="d-flex justify-content-between align-items-center">
                                         <div className="btn-group gap-2 text-end">
                                             <button
