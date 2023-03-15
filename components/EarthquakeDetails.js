@@ -8,19 +8,22 @@ const EarthquakeDetails = () => {
     const [earthquakes, setEarthquakes] = useState([]);
 
     useEffect(() => {
-        fetch('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?latitude=32.2610059&longitude=37.2179931&maxradiuskm=1500')
+        fetch('https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2023-03-14&endtime=2024-04-20')
             .then(res => res.json())
-            .then(data => setEarthquakes(data.features))
+            .then(data => {
+                const filteredEarthquakes = data.features.filter(earthquake => earthquake.properties.mag >= 4);
+                setEarthquakes(filteredEarthquakes);
+            })
             .catch(error => console.log(error))
     }, []);
 
     if (earthquakes.length === 0) {
         return (
             <div className="container">
-            <div className="d-flex align-items-center justify-content-center">
-                <strong>تحميل البيانات ...</strong>
-                <div className="spinner-border ms-auto" role="status" aria-hidden="true"></div>
-            </div>
+                <div className="d-flex align-items-center justify-content-center">
+                    <strong>تحميل البيانات ...</strong>
+                    <div className="spinner-border ms-auto" role="status" aria-hidden="true"></div>
+                </div>
             </div>
         );
     }
@@ -33,19 +36,19 @@ const EarthquakeDetails = () => {
                         <div className="col" key={index}>
                             <div className="card shadow-sm h-100">
                                 <div className="card-body">
-                                    <p className="card-text">{earthquake.properties.place.replace(/^[^,]*,\s*/, '')}</p>
+                                    <p className="card-text">{earthquake.properties.place}</p>
                                     <div className="d-flex justify-content-between align-items-center">
                                         <div className="btn-group gap-2 text-end">
                                             <button
                                                 type="button"
-                                                className={`btn btn-secondary btn-sm ${earthquake.properties.mag < 2 ? 'btn-secondary' : earthquake.properties.mag < 3 ? 'btn-success' : earthquake.properties.mag >= 3 && earthquake.properties.mag < 4 ? 'btn-warning' : earthquake.properties.mag >= 4 && earthquake.properties.mag < 5 ? 'btn-danger' : 'btn-danger'} font-weight-bold`}
+                                                className={`btn btn-secondary btn-sm ${earthquake.properties.mag < 5 ? 'btn-success' : earthquake.properties.mag >= 5 && earthquake.properties.mag < 6 ? 'btn-warning' : 'btn-danger'} font-weight-bold`}
                                             >
                                                 {earthquake.properties.mag.toFixed(1)}  <FaSignal />
                                             </button>
 
                                             <p className="card-text text-muted"><small>
                                                 التاريخ: {moment(earthquake.properties.time).locale('ar').format("dddd DD MMMM")}
-                                                </small>
+                                            </small>
                                             </p>
                                         </div>
                                         <small className="text-muted text-bold">
@@ -59,6 +62,7 @@ const EarthquakeDetails = () => {
                     ))}
                 </div>
             </div>
+
         </div>
     );
 };
