@@ -8,7 +8,7 @@ const EarthquakeDetails = () => {
     const [earthquakes, setEarthquakes] = useState([]);
 
     useEffect(() => {
-        fetch('https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2023-03-14&endtime=2024-04-20')
+        fetch('https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2023-04-03&endtime=2023-06-20')
             .then(res => res.json())
             .then(data => {
                 const filteredEarthquakes = data.features.filter(earthquake => earthquake.properties.mag >= 4);
